@@ -10,4 +10,3 @@ class ItemAPITest(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
 
-# Create your tests here.
