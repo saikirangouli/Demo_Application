@@ -1,6 +1,6 @@
 // src/CreateUser.js
 import React, { useState } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 //const axios = require('axios');
 
 function CreateUser() {
@@ -10,7 +10,7 @@ function CreateUser() {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/users/', { name ,age});
+      const response = await axios.post('http://192.168.0.107:8000/app/users/', { name ,age});
       console.log('User created:', response.data);
       setName('');
       setAge('');
