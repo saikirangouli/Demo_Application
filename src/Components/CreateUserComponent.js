@@ -1,6 +1,6 @@
 // src/CreateUser.js
 import React, { useState } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 //const axios = require('axios');
 
 function CreateUser() {
