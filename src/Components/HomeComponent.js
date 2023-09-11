@@ -4,7 +4,7 @@ function MyButton() {
     const [users, setUsers] = useState([]);
   const fetchData = async () => {
     try {
-      const response = await fetch('http://192.168.0.107:8000/app/users/');
+      const response = await fetch('http://192.168.0.109:8000/app/users/');
       const data = await response.json();
       setUsers(data);
     } catch (error) {
