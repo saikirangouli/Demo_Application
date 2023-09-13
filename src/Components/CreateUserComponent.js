@@ -10,7 +10,7 @@ function CreateUser() {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://192.168.0.109:8000/app/users/', { name ,age});
+      const response = await axios.post('http://192.168.33.11:8000/app/users/', { name ,age});
       console.log('User created:', response.data);
       setName('');
       setAge('');
